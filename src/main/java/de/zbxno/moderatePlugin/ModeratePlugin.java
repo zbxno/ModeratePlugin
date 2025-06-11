@@ -2,9 +2,7 @@ package de.zbxno.moderatePlugin;
 
 import de.zbxno.moderatePlugin.Actions.Freeze.FreezeActionOn;
 
-import de.zbxno.moderatePlugin.Actions.InventoryAction;
 import de.zbxno.moderatePlugin.Actions.Mute.MuteActionOn;
-import de.zbxno.moderatePlugin.Actions.SocialAction;
 import de.zbxno.moderatePlugin.Commands.ModerateCommand;
 import de.zbxno.moderatePlugin.Commands.SpawnCommand;
 import de.zbxno.moderatePlugin.Listeners.JoinListener;

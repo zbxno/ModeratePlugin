@@ -15,7 +15,7 @@ public class WarnAction implements GuiAction {
         if (sender instanceof Player playerSender) {
             target.sendTitle(ChatColor.RED + "" + ChatColor.BOLD + "You have been warned", ChatColor.RED + "please be carefull", 10,70,20);
             target.playSound(target.getLocation(), Sound.ENTITY_WITHER_SPAWN, 1f, 1f);
-            sender.sendMessage(prefix + "You warned " +ChatColor.YELLOW +  target.getName());
+            playerSender.sendMessage(prefix + "You warned " +ChatColor.YELLOW +  target.getName());
         }
     }
 }

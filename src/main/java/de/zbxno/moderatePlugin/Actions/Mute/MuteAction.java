@@ -4,8 +4,6 @@ package de.zbxno.moderatePlugin.Actions.Mute;
 import de.zbxno.moderatePlugin.Commands.ModerateCommand;
 import de.zbxno.moderatePlugin.util.GuiAction;
 import de.zbxno.moderatePlugin.util.ManageGUI;
-import net.md_5.bungee.api.ChatColor;
-import org.bukkit.Sound;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;

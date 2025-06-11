@@ -1,7 +1,7 @@
 package de.zbxno.moderatePlugin.Actions.Mute;
 
 
-import de.zbxno.moderatePlugin.Actions.Freeze.FreezeAction;
+
 import de.zbxno.moderatePlugin.ModeratePlugin;
 import de.zbxno.moderatePlugin.util.GuiAction;
 import net.md_5.bungee.api.ChatColor;
@@ -11,10 +11,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
-import org.bukkit.event.player.PlayerChatEvent;
 
-import java.net.http.WebSocket;
-import java.util.List;
 
 public class MuteActionOn implements GuiAction , Listener {
     String prefix = ModeratePlugin.prefix;

@@ -3,11 +3,10 @@ package de.zbxno.moderatePlugin.Actions;
 
 import de.zbxno.moderatePlugin.ModeratePlugin;
 import de.zbxno.moderatePlugin.util.GuiAction;
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Sound;
 import org.bukkit.command.CommandSender;
-import org.bukkit.entity.ItemFrame;
+
 import org.bukkit.entity.Player;
 
 public class KickAction implements GuiAction {

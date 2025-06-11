@@ -15,7 +15,7 @@ import java.util.Set;
 
 public class ModerateCommand implements CommandExecutor{
 
-    public class PlayerWithModInv {
+    public static class PlayerWithModInv {
 
         private static final Set<Player> PlayerWithModInv = new HashSet<>();
 
@@ -32,7 +32,7 @@ public class ModerateCommand implements CommandExecutor{
         }
     }
 
-    public class PlayerWithFreezeInv {
+    public static class PlayerWithFreezeInv {
 
         private static final Set<Player> PlayerWithFreezeInv = new HashSet<>();
 
@@ -49,7 +49,7 @@ public class ModerateCommand implements CommandExecutor{
         }
     }
 
-    public class PlayerWithJailInv {
+    public static class PlayerWithJailInv {
 
         private static final Set<Player> PlayerWithJailInv = new HashSet<>();
 
@@ -66,7 +66,7 @@ public class ModerateCommand implements CommandExecutor{
         }
     }
 
-    public class PlayerWithShowInv {
+    public static class PlayerWithShowInv {
 
         private static final Set<Player> PlayerWithShowInv = new HashSet<>();
 
@@ -82,7 +82,7 @@ public class ModerateCommand implements CommandExecutor{
             return PlayerWithShowInv.contains(player);
         }
     }
-    public class PlayerWithMuteInv {
+    public static class PlayerWithMuteInv {
 
         private static final Set<Player> PlayerWithMuteInv = new HashSet<>();
 
