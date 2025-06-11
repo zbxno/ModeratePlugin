@@ -1,0 +1,9 @@
+name: ModeratePlugin
+version: '1.0'
+main: de.zbxno.moderatePlugin.ModeratePlugin
+api-version: '1.21'
+commands:
+  moderate:
+    description: moderate a player
+  spawn:
+    description: teleports you to spawn
