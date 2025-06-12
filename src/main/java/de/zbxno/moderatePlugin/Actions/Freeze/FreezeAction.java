@@ -2,8 +2,9 @@ package de.zbxno.moderatePlugin.Actions.Freeze;
 
 
 import de.zbxno.moderatePlugin.Commands.ModerateCommand;
+import de.zbxno.moderatePlugin.ModeratePlugin;
 import de.zbxno.moderatePlugin.util.GuiAction;
-import de.zbxno.moderatePlugin.util.ManageGUI;
+import de.zbxno.moderatePlugin.util.GuiTargetManager;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
@@ -19,10 +20,12 @@ public class FreezeAction implements GuiAction, Listener {
 
     @Override
     public void execute(CommandSender sender, Player target){
-        Inventory freezeInv = new ManageGUI().getFreezeInv();
+        Player moderator = (Player) sender;
         if (sender instanceof Player playerSenderFreeze){
+            Inventory freezeInv = ModeratePlugin.gui.getFreezeInv();
             playerSenderFreeze.openInventory(freezeInv);
             ModerateCommand.PlayerWithFreezeInv.addPlayer(playerSenderFreeze);
+            GuiTargetManager.setTarget(moderator, target);
         }
     }
 

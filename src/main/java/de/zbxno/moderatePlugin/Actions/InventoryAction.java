@@ -8,13 +8,13 @@ import de.zbxno.moderatePlugin.ModeratePlugin;
 import de.zbxno.moderatePlugin.util.GuiAction;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.Sound;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Listener;
 
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
-
 
 
 public class InventoryAction implements GuiAction, Listener {
@@ -34,6 +34,7 @@ public class InventoryAction implements GuiAction, Listener {
         senderPlayer.openInventory(targetInv);
         ModerateCommand.PlayerWithShowInv.addPlayer(senderPlayer);
         senderPlayer.sendMessage(prefix + "You opened " + ChatColor.YELLOW + target.getName() + ChatColor.RESET +  "'s inventory");
+        senderPlayer.playSound(senderPlayer.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 1f,1f);
     }
 
 

@@ -18,12 +18,12 @@ public class FreezeActionOn implements GuiAction, Listener {
         if (sender instanceof Player playerSender) {
             if (!(FreezeAction.frozenPlayers.contains(target.getUniqueId()))){
                 playerSender.playSound(playerSender.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 1f, 1f);
-                playerSender.sendMessage(prefix + "You froze the player " + ChatColor.YELLOW + target.getName());
-                target.sendTitle(ChatColor.AQUA + "" + ChatColor.BOLD + "You have been iced!", ChatColor.AQUA + "Be carefull where you go!", 20, 80, 40);
+                playerSender.sendMessage(prefix + ChatColor.WHITE + "You just froze " + ChatColor.GOLD + target.getName() + ChatColor.WHITE + "!");
+                target.sendTitle(org.bukkit.ChatColor.AQUA + "" + org.bukkit.ChatColor.BOLD + "Freeze!", org.bukkit.ChatColor.AQUA + "it is really cold here!", 20, 80, 40);
                 target.playSound(target.getLocation(), Sound.ENTITY_STRAY_AMBIENT, 1.f, 1.f);
                 FreezeAction.frozenPlayers.add(target.getUniqueId());
             }else {
-                playerSender.sendMessage(prefix + "Player alreay frozen!");
+                playerSender.sendMessage(prefix + ChatColor.GOLD + target.getName() + ChatColor.WHITE + " is already frozen — ice, ice, baby!");
                 playerSender.playSound(playerSender.getLocation(), Sound.BLOCK_ANVIL_DESTROY, 1f, 1f);
             }
 

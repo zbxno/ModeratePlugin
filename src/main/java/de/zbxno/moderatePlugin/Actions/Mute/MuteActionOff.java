@@ -19,7 +19,7 @@ public class MuteActionOff implements GuiAction {
                 MuteAction.mutePlayers.remove(target.getUniqueId());
                 playerSender.sendMessage(prefix + "You unmuted the player " + ChatColor.YELLOW + target.getName());
                 playerSender.playSound(playerSender.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 1f, 1f);
-                target.spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent(ChatColor.RED + "" +ChatColor.BOLD + "You can write now"));
+                target.spigot().sendMessage(ChatMessageType.ACTION_BAR, new TextComponent(ChatColor.WHITE  + "You can write now"));
                 target.playSound(target.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 1f, 1f);
             }else {
                 playerSender.sendMessage(prefix + "Player is not muted");

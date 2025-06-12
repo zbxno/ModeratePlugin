@@ -22,7 +22,7 @@ public class MuteActionOn implements GuiAction , Listener {
                 playerSender.playSound(playerSender.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 1f, 1f);
                 playerSender.sendMessage(prefix + "You muted the player " + ChatColor.YELLOW + target.getName());
                 target.sendTitle(ChatColor.RED + "" + ChatColor.BOLD + "You have been Muted!", ChatColor.RED + "Be carefull what you say!", 20, 80, 40);
-                target.playSound(target.getLocation(), Sound.ENTITY_STRAY_AMBIENT, 1.f, 1.f);
+                target.playSound(target.getLocation(), Sound.ENTITY_WITHER_SPAWN ,1.f, 1.f);
                 MuteAction.mutePlayers.add(target.getUniqueId());
             }else {
                 playerSender.sendMessage(prefix + "Player alreay muted!");

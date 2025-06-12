@@ -6,4 +6,8 @@ commands:
   moderate:
     description: moderate a player
   spawn:
-    description: teleports you to spawn
+    description: teleports you to spawnnn
+  setjail:
+    description: set the jail
+  setspawn:
+    description: set the spawn!

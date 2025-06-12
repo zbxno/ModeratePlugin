@@ -1,7 +1,7 @@
 package de.zbxno.moderatePlugin.Commands;
 
 import de.zbxno.moderatePlugin.ModeratePlugin;
-import de.zbxno.moderatePlugin.util.ManageGUI;
+import de.zbxno.moderatePlugin.util.GuiTargetManager;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -111,7 +111,8 @@ public class ModerateCommand implements CommandExecutor{
                     Player target = Bukkit.getPlayerExact(playerName);
                     if (!(target == null)){
                         PlayerWithModInv.addPlayer(p);
-                        Inventory modInv = new ManageGUI().getModInv();
+                        GuiTargetManager.setTarget(p, target);
+                        Inventory modInv = ModeratePlugin.gui.getModInv();
                         p.openInventory(modInv);
                         p.sendMessage(prefix + "You are now moderaiting " + ChatColor.YELLOW + target.getName());
                     }else {
